@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Exercicio4 {
+
+	/*
+	 * Faça um programa em que permita a entrada de um número qualquer e exiba se este
+	número é par ou ímpar. Se for par exiba também a raiz quadrada do mesmo; se for
+	ímpar exiba o número elevado ao quadrado.
+	 */
+	public static void main(String[] args) {
+		
+		Scanner read = new Scanner (System.in);
+		
+		double numero, parImpar, raiz, quadrado;
+		
+		System.out.println("Insira o número desejado: ");
+		numero = read.nextInt();
+		
+		parImpar = numero % 2;
+		
+		if(parImpar == 0) {
+			
+			raiz =  Math.sqrt(numero);
+			System.out.println("O número " + numero + " é par e sua raiz é: " + raiz);
+			
+		}
+		else {
+			
+			quadrado = Math.pow(numero, 2);
+			System.out.println("O número " + numero + " é impar e sua potência ao quadrado é: " + quadrado);
+			
+		}
+		
+		read.close();
+	}
+
+}

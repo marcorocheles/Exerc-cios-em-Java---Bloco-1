@@ -1,0 +1,49 @@
+package atividadeDia08;
+
+import java.util.Scanner;
+
+/*
+ * Marco Rocheles
+ * Atividade 1
+ * inteiro anos, meses, dias
+
+		escreva("Quantos anos você tem? ")	
+		leia(anos)
+		
+		escreva("Quantos meses? ")
+		leia(meses)
+		
+		escreva("E quantos dias? ")
+		leia(dias)
+
+		inteiro resultado = (anos*365) + (meses*30) + dias
+		limpa()
+		
+		escreva("Se transformarmos sua idade em dias, você tem " + resultado + " dias. :)")
+ */
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+		
+		int anos, meses, dias;
+		
+		Scanner leia = new Scanner (System.in);
+				
+		System.out.println("Quantos anos você tem? ");
+		anos = leia.nextInt();
+		
+		System.out.println("Quantos meses? ");
+		meses = leia.nextInt();
+		
+		System.out.println("E quantos dias? ");
+		dias = leia.nextInt();
+		
+		int resultado = (anos * 365 ) + (meses * 30 ) + dias;
+		
+		System.out.println("Transformando sua idade em dias, você tem " + resultado + " dias. :)");
+		leia.close();
+		
+	}
+
+}
