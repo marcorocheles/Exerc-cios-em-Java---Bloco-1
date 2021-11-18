@@ -1,8 +1,17 @@
 package br.com.heranca;
-public class Cachorro extends Animal{
+public class Cachorro extends Animal implements InterfaceAnimal{
 
-	void corre() {
-		System.out.println("O animal pode correr.");
+
+	@Override
+	public void emitirSom() {
+		System.out.println("O som que o cachorro emite é um latido: au au.");
+		
+	}
+
+	@Override
+	public void quadrupede() {
+		System.out.println("O cachorro é capaz de correr.");
+		
 	}
 	
 }
